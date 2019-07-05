@@ -127,7 +127,7 @@ model.add(Dense(2, activation='softmax'))
 
 model.compile(optimizer=Adam(lr=0.0001), loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-# model.fit(x_train, y_train, batch_size=64, epochs=100, validation_data=(x_valid, y_valid), verbose=2)
+model.fit(x_train, y_train, batch_size=64, epochs=100, validation_data=(x_valid, y_valid), verbose=2)
 
 # model.save("Google-Stock-Prediction.h5")
 
